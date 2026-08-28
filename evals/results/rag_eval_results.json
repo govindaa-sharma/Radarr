@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-08-25T09:14:32.403532+00:00",
+  "mode": "mock (RAGAS scoring skipped \u2014 needs a live judge LLM)",
+  "rows": [
+    {
+      "id": "cashfree_pricing_cut",
+      "question": "Has Cashfree changed pricing recently?",
+      "answer": "Based on the available intelligence: [Cashfree] [PRICING_CHANGE] importance=5/5 | 2026-08-20 09:00:00\nCashfree cut its standard plan fee from 1.95% + GST to 1.6% + GST, positioning as the lowest in the industry. This directly pressures c",
+      "contexts": [
+        "[Cashfree] [PRICING_CHANGE] importance=5/5 | 2026-08-20 09:00:00\nCashfree cut its standard plan fee from 1.95% + GST to 1.6% + GST, positioning as the lowest in the industry. This directly pressures competitors on price-sensitive merchants."
+      ],
+      "ground_truth": "Yes, Cashfree cut its standard plan fee from 1.95% + GST to 1.6% + GST, an aggressive pricing move."
+    },
+    {
+      "id": "stripe_ai_direction",
+      "question": "What is Stripe doing in AI?",
+      "answer": "Based on the available intelligence: [Stripe] [HIRING_SURGE] importance=5/5 | 2026-08-18 09:00:00\nStripe posted 14 new engineering roles for its Agentic Commerce team, based in Bangalore and Dublin, signalling a major push into AI-driven",
+      "contexts": [
+        "[Stripe] [HIRING_SURGE] importance=5/5 | 2026-08-18 09:00:00\nStripe posted 14 new engineering roles for its Agentic Commerce team, based in Bangalore and Dublin, signalling a major push into AI-driven payment agents.",
+        "[Stripe] [FEATURE_LAUNCH] importance=4/5 | 2026-08-15 09:00:00\nStripe announced the Machine Payments Protocol, positioning them ahead in agentic commerce infrastructure."
+      ],
+      "ground_truth": "Stripe is expanding into agentic commerce, hiring engineers for an Agentic Commerce team and posting roles in Bangalore and Dublin."
+    },
+    {
+      "id": "most_active_competitor",
+      "question": "Which competitor has been most active this week?",
+      "answer": "Based on the available intelligence: [Razorpay] [PARTNERSHIP] importance=5/5 | 2026-08-21 09:00:00\nRazorpay partners with NPCI and Anthropic to launch Agentic Payments across banking and payroll platforms.",
+      "contexts": [
+        "[Razorpay] [PARTNERSHIP] importance=5/5 | 2026-08-21 09:00:00\nRazorpay partners with NPCI and Anthropic to launch Agentic Payments across banking and payroll platforms.",
+        "[Razorpay] [FEATURE_LAUNCH] importance=4/5 | 2026-08-19 09:00:00\nRazorpay introduced RazorpayX Payroll, full-stack payroll and compliance for Indian startups.",
+        "[Razorpay] [PRODUCT_UPDATE] importance=3/5 | 2026-08-17 09:00:00\nRazorpay dashboard now supports dark mode and faster settlement reports."
+      ],
+      "ground_truth": "Razorpay has had the most signals this week, including a partnership with NPCI and a RazorpayX Payroll launch."
+    },
+    {
+      "id": "no_relevant_data",
+      "question": "Has any competitor announced layoffs?",
+      "answer": "Based on the available intelligence: [Stripe] [HIRING_SURGE] importance=5/5 | 2026-08-18 09:00:00\nStripe posted 14 new engineering roles for its Agentic Commerce team.",
+      "contexts": [
+        "[Stripe] [HIRING_SURGE] importance=5/5 | 2026-08-18 09:00:00\nStripe posted 14 new engineering roles for its Agentic Commerce team."
+      ],
+      "ground_truth": "There is no information about layoffs in the available intelligence data."
+    },
+    {
+      "id": "leadership_change_query",
+      "question": "Did Stripe make any leadership changes?",
+      "answer": "Based on the available intelligence: [Stripe] [LEADERSHIP_CHANGE] importance=4/5 | 2026-08-16 09:00:00\nStripe announced a new Chief Revenue Officer, previously VP of Sales at a Fortune 500 company.",
+      "contexts": [
+        "[Stripe] [LEADERSHIP_CHANGE] importance=4/5 | 2026-08-16 09:00:00\nStripe announced a new Chief Revenue Officer, previously VP of Sales at a Fortune 500 company."
+      ],
+      "ground_truth": "Yes, Stripe announced a new Chief Revenue Officer, previously VP of Sales at a Fortune 500 company."
+    }
+  ]
+}

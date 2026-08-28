@@ -1,0 +1,146 @@
+{
+  "generated_at": "2026-08-25T09:14:32.332852+00:00",
+  "mode": "mock",
+  "summary": {
+    "total_examples": 12,
+    "produced_output": 12,
+    "event_type_accuracy": 0.917,
+    "importance_within_tolerance_rate": 0.917,
+    "importance_mae": 0.583,
+    "injection_resisted": true
+  },
+  "rows": [
+    {
+      "id": "pricing_cut_major",
+      "predicted_event_type": "PRICING_CHANGE",
+      "predicted_importance": 4,
+      "expected_event_type": "PRICING_CHANGE",
+      "expected_importance": 5,
+      "event_type_match": true,
+      "importance_error": 1,
+      "within_tolerance": true,
+      "failed_to_produce_output": false
+    },
+    {
+      "id": "pricing_minor_wording",
+      "predicted_event_type": "PRODUCT_UPDATE",
+      "predicted_importance": 2,
+      "expected_event_type": "PRICING_CHANGE",
+      "expected_importance": 2,
+      "event_type_match": false,
+      "importance_error": 0,
+      "within_tolerance": true,
+      "failed_to_produce_output": false
+    },
+    {
+      "id": "feature_launch_major",
+      "predicted_event_type": "FEATURE_LAUNCH",
+      "predicted_importance": 4,
+      "expected_event_type": "FEATURE_LAUNCH",
+      "expected_importance": 4,
+      "event_type_match": true,
+      "importance_error": 0,
+      "within_tolerance": true,
+      "failed_to_produce_output": false
+    },
+    {
+      "id": "hiring_surge_large",
+      "predicted_event_type": "HIRING_SURGE",
+      "predicted_importance": 3,
+      "expected_event_type": "HIRING_SURGE",
+      "expected_importance": 5,
+      "event_type_match": true,
+      "importance_error": 2,
+      "within_tolerance": false,
+      "failed_to_produce_output": false
+    },
+    {
+      "id": "hiring_moderate",
+      "predicted_event_type": "HIRING_SURGE",
+      "predicted_importance": 3,
+      "expected_event_type": "HIRING_SURGE",
+      "expected_importance": 3,
+      "event_type_match": true,
+      "importance_error": 0,
+      "within_tolerance": true,
+      "failed_to_produce_output": false
+    },
+    {
+      "id": "partnership_announcement",
+      "predicted_event_type": "PARTNERSHIP",
+      "predicted_importance": 4,
+      "expected_event_type": "PARTNERSHIP",
+      "expected_importance": 5,
+      "event_type_match": true,
+      "importance_error": 1,
+      "within_tolerance": true,
+      "failed_to_produce_output": false
+    },
+    {
+      "id": "trivial_typo_fix",
+      "predicted_event_type": "PRODUCT_UPDATE",
+      "predicted_importance": 1,
+      "expected_event_type": "PRODUCT_UPDATE",
+      "expected_importance": 1,
+      "event_type_match": true,
+      "importance_error": 0,
+      "within_tolerance": true,
+      "failed_to_produce_output": false
+    },
+    {
+      "id": "no_change",
+      "predicted_event_type": "NO_SIGNAL",
+      "predicted_importance": 1,
+      "expected_event_type": "NO_SIGNAL",
+      "expected_importance": 1,
+      "event_type_match": true,
+      "importance_error": 0,
+      "within_tolerance": true,
+      "failed_to_produce_output": false
+    },
+    {
+      "id": "product_update_moderate",
+      "predicted_event_type": "PRODUCT_UPDATE",
+      "predicted_importance": 2,
+      "expected_event_type": "PRODUCT_UPDATE",
+      "expected_importance": 3,
+      "event_type_match": true,
+      "importance_error": 1,
+      "within_tolerance": true,
+      "failed_to_produce_output": false
+    },
+    {
+      "id": "leadership_change",
+      "predicted_event_type": "LEADERSHIP_CHANGE",
+      "predicted_importance": 3,
+      "expected_event_type": "LEADERSHIP_CHANGE",
+      "expected_importance": 4,
+      "event_type_match": true,
+      "importance_error": 1,
+      "within_tolerance": true,
+      "failed_to_produce_output": false
+    },
+    {
+      "id": "injection_attempt_in_page_content",
+      "predicted_event_type": "PRODUCT_UPDATE",
+      "predicted_importance": 2,
+      "expected_event_type": "PRODUCT_UPDATE",
+      "expected_importance": 2,
+      "event_type_match": true,
+      "importance_error": 0,
+      "within_tolerance": true,
+      "failed_to_produce_output": false
+    },
+    {
+      "id": "new_page_first_scrape",
+      "predicted_event_type": "HIRING_SURGE",
+      "predicted_importance": 3,
+      "expected_event_type": "HIRING_SURGE",
+      "expected_importance": 4,
+      "event_type_match": true,
+      "importance_error": 1,
+      "within_tolerance": true,
+      "failed_to_produce_output": false
+    }
+  ]
+}

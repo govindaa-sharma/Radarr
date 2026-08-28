@@ -1,0 +1,43 @@
+# Core orchestration
+langgraph==0.2.60
+langchain==0.3.13
+langchain-core==0.3.28
+langchain-google-genai==2.0.7
+langchain-ollama==0.2.2
+
+# Guardrails / structured output
+pydantic==2.10.4
+
+# Scraping
+httpx==0.28.1
+playwright==1.49.1
+beautifulsoup4==4.12.3
+
+# Memory
+psycopg2-binary==2.9.10
+qdrant-client==1.12.1
+sentence-transformers==3.3.1
+
+# Scheduling
+celery==5.4.0
+redis==5.2.1
+
+# Dashboard
+streamlit==1.41.1
+plotly==5.24.1
+pandas==2.2.3
+
+# Evaluation (Phase 2) — the analyst eval runs fine in this main env.
+# The RAG eval needs ragas, which pins langchain-core<0.3 and conflicts
+# with langgraph's langchain-core>=1.4 requirement above. Install its deps
+# in a separate venv: see evals/requirements-eval.txt and evals/README.md.
+
+# Observability (Phase 3) — extras give auto-instrumented httpx/psycopg spans
+importlib_metadata==8.5.0
+logfire[httpx,psycopg]==2.11.1
+
+# Config / testing
+python-dotenv==1.0.1
+pyyaml==6.0.2
+pytest==8.3.4
+pytest-asyncio==0.25.0

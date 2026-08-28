@@ -1,0 +1,49 @@
+.env
+.env.*
+!.env.example
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+.venv-evals/
+env/
+ENV/
+
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Testing / tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+
+# Note: evals/results/*.md and .json are intentionally NOT ignored —
+# those are the eval reports you want visible in the repo as evidence
+# of measured accuracy/guardrail behavior. Re-run before pushing to
+# make sure they reflect real numbers, not stale mock output.
+
+# Local data volumes if Docker ever writes anything outside named volumes
+*.log
+*.sqlite3
+qdrant_storage/
+postgres_data/
+
+# Playwright browser cache if installed locally outside Docker
+.playwright-cache/

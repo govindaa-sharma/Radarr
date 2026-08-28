@@ -1,0 +1,27 @@
+competitors:
+  - name: Stripe
+    urls:
+      - url: https://stripe.com/pricing
+        type: pricing
+      - url: https://stripe.com/blog
+        type: blog
+      - url: https://stripe.com/jobs
+        type: hiring
+
+  - name: Razorpay
+    urls:
+      - url: https://razorpay.com/pricing/
+        type: pricing
+      - url: https://razorpay.com/blog/
+        type: blog
+      - url: https://razorpay.com/jobs/
+        type: hiring
+
+  - name: Cashfree
+    urls:
+      - url: https://www.cashfree.com/payment-gateway-charges/
+        type: pricing
+      - url: https://www.cashfree.com/blog/
+        type: blog
+      - url: https://www.cashfree.com/careers/
+        type: hiring

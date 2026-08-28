@@ -1,0 +1,18 @@
+# Eval-only dependencies, installed in a separate venv from requirements.txt.
+#
+# Why separate: ragas 0.1.x pins langchain-core<0.3, while this project's
+# langgraph 0.2.60 pulls in langchain-core>=1.4. Installing both in one
+# environment produces unresolvable conflicts. Run evals in their own venv
+# or CI job:
+#
+#   python -m venv .venv-evals && source .venv-evals/bin/activate
+#   pip install -r evals/requirements-eval.txt
+#   python -m evals.run_analyst_eval        # or --mock
+#   python -m evals.run_rag_eval             # or --mock
+
+ragas==0.1.21
+datasets==2.21.0
+langchain-community==0.2.19
+langchain-google-genai==1.0.10
+python-dotenv==1.0.1
+pandas==2.2.3

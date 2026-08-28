@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # Only the dependencies needed for the pure unit tests (tools/diffing.py,
+      # tools/guardrails.py) — no live DB/LLM/API keys required, so this runs
+      # on every PR without secrets. The eval harness in evals/ is separate
+      # and intentionally NOT run here since it needs GEMINI_API_KEY and live
+      # infra; run it manually with `python -m evals.run_evals`.
+      - name: Install test dependencies
+        run: pip install pytest pydantic
+
+      - name: Run unit tests
+        run: pytest tests/ -v
